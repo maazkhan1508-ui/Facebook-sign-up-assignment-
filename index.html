@@ -25,16 +25,16 @@
 </head>
 <body class="bg-fbBg text-[#1c1e21] font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Educational Disclaimer Banner -->
+
     <div class="w-full bg-[#fff3cd] text-[#856404] text-center py-2 text-xs font-semibold border-b border-[#ffeeba] z-50 sticky top-0">
         ⚠️ Educational Practice Project - Web Development Assignment (Desktop View)
     </div>
 
-    <!-- ================= 1. DESKTOP SIGN-UP / LOGIN PAGE ================= -->
+    
     <div id="signupSection" class="flex-1 flex items-center justify-center p-6 md:p-12">
         <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             
-            <!-- Left Side: Facebook Branding (Desktop Style) -->
+            
             <div class="text-center md:text-left pr-0 md:pr-8">
                 <h1 class="text-fbBlue text-6xl font-bold tracking-tight mb-3">facebook</h1>
                 <p class="text-2xl md:text-3xl text-gray-800 font-normal leading-snug">
@@ -42,7 +42,7 @@
                 </p>
             </div>
 
-            <!-- Right Side: Sign-Up Card -->
+            
             <div class="flex justify-center md:justify-end">
                 <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md border border-gray-200">
                     <div class="border-b pb-3 mb-4">
@@ -72,10 +72,10 @@
         </div>
     </div>
 
-    <!-- ================= 2. DESKTOP DASHBOARD (3-COLUMN LAYOUT) ================= -->
+    
     <div id="dashboardSection" class="hidden min-h-screen flex-col bg-fbBg">
         
-        <!-- Desktop Top Navigation Bar -->
+        
         <header class="bg-white h-14 shadow-sm border-b border-gray-200 sticky top-0 z-40 px-4 flex items-center justify-between">
             <!-- Left: Logo & Search -->
             <div class="flex items-center space-x-2">
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <!-- Center: Navigation Tabs (Desktop Grid) -->
+    
             <div class="hidden lg:flex items-center space-x-1 h-full">
                 <button class="px-8 h-full border-b-4 border-fbBlue text-fbBlue flex items-center justify-center">
                     <i class="fa-solid fa-house text-2xl"></i>
@@ -102,7 +102,7 @@
                 </button>
             </div>
 
-            <!-- Right: Account Profile & Shortcuts -->
+            
             <div class="flex items-center space-x-2">
                 <div class="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center cursor-pointer">
                     <i class="fa-solid fa-grip text-lg text-gray-800"></i>
@@ -119,10 +119,10 @@
             </div>
         </header>
 
-        <!-- Main 3-Column Desktop Body -->
+        
         <main class="max-w-[1440px] w-full mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 p-4 flex-1">
             
-            <!-- Left Sidebar (Desktop Navigation Links) -->
+            
             <aside class="hidden lg:block space-y-1">
                 <div class="flex items-center space-x-3 p-2 hover:bg-gray-200 rounded-lg cursor-pointer">
                     <div class="w-9 h-9 rounded-full bg-fbBlue text-white font-bold flex items-center justify-center">M</div>
@@ -146,10 +146,10 @@
                 </div>
             </aside>
 
-            <!-- Center Feed Column -->
+            
             <section class="lg:col-span-2 space-y-4 max-w-2xl mx-auto w-full">
                 
-                <!-- Desktop Stories Banner -->
+                
                 <div class="grid grid-cols-3 gap-2 mb-4">
                     <div class="bg-white rounded-xl shadow h-40 flex flex-col justify-between p-3 bg-gradient-to-b from-transparent to-black/60 relative overflow-hidden cursor-pointer">
                         <div class="w-8 h-8 rounded-full bg-fbBlue text-white font-bold flex items-center justify-center border-2 border-white z-10">M</div>
@@ -165,7 +165,7 @@
                     </div>
                 </div>
 
-                <!-- Post Creation Box -->
+            
                 <div class="bg-white p-4 rounded-xl shadow border border-gray-200">
                     <div class="flex items-center space-x-3 pb-3 border-b border-gray-100">
                         <div class="w-10 h-10 rounded-full bg-fbBlue text-white font-bold flex items-center justify-center">M</div>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
 
-                <!-- Feed Post Item 1 -->
+                
                 <article class="bg-white rounded-xl shadow border border-gray-200 p-4">
                     <div class="flex items-center justify-between mb-3">
                         <div class="flex items-center space-x-3">
@@ -217,13 +217,111 @@
 
             </section>
 
-            <!-- Right Sidebar (Contacts & Sponsored) -->
+       @media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .nav-buttons {
+        gap: 8px;
+    }
+
+    .nav-buttons a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+}    
             <aside class="hidden lg:block space-y-4">
                 <div class="bg-white p-3 rounded-xl shadow border border-gray-200">
                     <h4 class="font-bold text-gray-500 text-sm mb-3">Sponsored</h4>
                     <div class="flex items-center space-x-3 cursor-pointer">
                         <div class="w-20 h-16 bg-gray-200 rounded-lg flex items-center justify-center font-bold text-xs text-gray-500">
-                            Ad Banner
+                            
                         </div>
                         <div>
                             <h5 class="text-sm font-semibold text-gray-800">Learn Web Development</h5>
@@ -256,7 +354,7 @@
         </main>
     </div>
 
-    <!-- Toggle View Logic -->
+
     <script>
         function openDashboard(event) {
             event.preventDefault();
